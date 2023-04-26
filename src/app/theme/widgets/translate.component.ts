@@ -25,17 +25,6 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
     </button>
 
     <ng-template #small>
-      <!-- <mat-sidenav-container class="container">
-        <mat-sidenav #sidenav class="sidenav" mode="over" opened="false">
-          <h2>test</h2>
-        </mat-sidenav>
-        <mat-toolbar class="toolbar">
-          <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
-          </button>
-        </mat-toolbar>
-        <h2>testing</h2>
-      </mat-sidenav-container> -->
       <mat-drawer class="fullscreen" #drawer>
         <!-- drawer content here -->
         <div class="drawercontents">
@@ -53,30 +42,20 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
           >
 
           <mat-divider></mat-divider>
-          <a
-            class="link-animation"
-            routerLink="../merchant"
-            routerLinkActive="active"
-            >test2</a
+
+          <button
+            mat-icon-button
+            class="matero-toolbar-button"
+            [matMenuTriggerFor]="menu"
           >
-          <a
-            class="link-animation"
-            routerLink="../merchant"
-            routerLinkActive="active"
-            >test3</a
-          >
-          <a
-            class="link-animation"
-            routerLink="../merchant"
-            routerLinkActive="active"
-            >test4</a
-          >
-          <a
-            class="link-animation"
-            routerLink="../merchant"
-            routerLinkActive="active"
-            >test5</a
-          >
+            <h3 style="">
+              {{ language }}
+              <span>
+                <img src="../../../../../assets/images/globalize.svg" alt="" />
+              </span>
+            </h3>
+            <!-- <mat-icon style="color: green">language</mat-icon> -->
+          </button>
         </div>
       </mat-drawer>
       <button
@@ -138,7 +117,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
         width: 100%;
         height: max-content;
         position: absolute;
-        top: 0;
+        top: 70px;
         left: 0;
         z-index: 1;
       }
@@ -151,22 +130,46 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
         display: flex;
         flex-direction: column;
         padding: 20px;
-        gap: 10px;
+        gap: 36px;
       }
 
       .link-animation {
         text-decoration: none;
-        color: #000;
+        color: #8a908e;
+        opacity: 0.5;
         transition: transform 0.3s ease-in-out;
+        width: 330px;
+        height: 32px;
+
+        font-family: 'Arial-RoundedBold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        /* identical to box height */
+
+        /* color: #3b403f; */
+      }
+
+      .link-animation.active {
+        /* text-decoration: underline #009476;
+        text-decoration-color: #ffd100; */
+        color: #3b403f;
+        opacity: 1;
+        border-bottom: 2px solid #ffd100; /* sets the thickness and style of the underline */
+        line-height: 1.5em; /* sets the height of the link */
+        padding-bottom: 0.5em; /* sets the gap between the link text and the underline */
+        text-decoration: none;
+        width: fit-content;
       }
 
       .link-animation:hover {
         transform: scale(1.1);
       }
 
-      .link-animation:visited {
+      /* .link-animation:visited {
         color: #009476;
-      }
+      } */
 
       .mat-mdc-icon-button.mat-mdc-button-base {
         width: 39px;
@@ -185,7 +188,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
       }
 
       h3 {
-        font-family: Almarai;
+        font-family: 'Almarai';
         display: flex;
         width: 91px;
         height: 27px;
@@ -193,9 +196,16 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
         position: relative;
         gap: 6px;
         justify-content: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
 
         @media screen and (max-width: 768px) {
           right: 63px;
+        }
+
+        @media screen and (max-width: 600px) {
+          right: 0;
         }
       }
     `,
