@@ -1,0 +1,269 @@
+<div class="container">
+    <div class="header">
+        <nav>
+            <img src="../../../../../assets/images/Hala financing 1.svg" alt="">
+            <div class="links">
+                <a id="merchants" routerLink="../merchant" routerLinkActive="active"> {{ 'nav.merchant' | translate }}
+                </a>
+                <p>|</p>
+                <a id="investors" routerLink="../investors" routerLinkActive="active">{{ 'nav.investor' | translate
+                    }}</a>
+            </div>
+            <app-translate></app-translate>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="banner">
+            <div class="texts">
+                <h2>{{ 'contents.bannerHead' | translate }}</h2>
+                <p>{{ 'contents.bannerPara' | translate }}
+                </p>
+            </div>
+            <div class="image">
+                <img src="../../../../../assets/images/banner.svg" alt="">
+            </div>
+        </div>
+        <div class="calculatefin">
+            <div class="content">
+                <div class="subcontentleft" *ngIf="!eligible;else test">
+                    <div class="finhead">
+                        <span><img src="../../../../../assets/images/calculateicon.svg" alt=""></span>
+                        <h3>Calculate your finance</h3>
+                    </div>
+                    <!-- <div class="calc"> -->
+                    <!-- <div class="calcavgpossale"> -->
+                    <!-- <h3>What is the average monthly POS sales?</h3> -->
+                    <div class="inputandbtn">
+                        <form [formGroup]="calcAmountForm" (ngSubmit)="onCalculate()">
+                            <mat-label style="height: 29px; display: flex;">What is the average monthly POS
+                                sales?</mat-label>
+                            <div class="torow" style="display: flex;">
+                                <mat-form-field appearance="outline">
+                                    <input formControlName="calculate" type="number" id="calculate"
+                                        [placeholder]="placeholder" matInput />
+                                    <mat-error *ngIf="checkError('calculate', 'required')">The minimum amount should
+                                        not be less than 40,000 SAR</mat-error>
+                                    <mat-error *ngIf="checkError('calculate', 'min')">The minimum amount
+                                        should
+                                        not be less than 40,000 SAR</mat-error>
+                                    <!-- <mat-error *ngIf="checkError('calculate', 'max')">The minimum amount
+                                        should
+                                        not be greater than 100,000,0 SAR</mat-error> -->
+                                </mat-form-field>
+                                <div class="btn">
+                                    <app-button [buttonType]="'submit'" buttonColor="#5B0E9F"
+                                        (buttonClicked)="onCalculate()" buttonTextColor="#fff" buttonWidth="101px"
+                                        buttonHeight="75%">Calculate</app-button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- <input type="number" id="amount" [placeholder]="placeholder" matInput /> -->
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+                <ng-template #test>
+                    <div class="anotherSubContent">
+                        <div class="finhead">
+                            <span><img src="../../../../../assets/images/calculateicon.svg" alt=""></span>
+                            <h3>Calculate your finance</h3>
+                        </div>
+                        <!-- <div class="calc"> -->
+                        <!-- <div class="calcavgpossale"> -->
+                        <!-- <h3>What is the average monthly POS sales?</h3> -->
+                        <div class="inputandbtn">
+                            <form [formGroup]="calcAmountForm" (ngSubmit)="onCalculate()">
+                                <mat-label style="height: 29px; display: flex;">What is the average monthly POS
+                                    sales?</mat-label>
+                                <div class="torow" style="display: flex;">
+                                    <mat-form-field appearance="outline">
+                                        <input formControlName="calculate" type="number" id="calculate"
+                                            [placeholder]="placeholder" matInput />
+                                        <mat-error *ngIf="checkError('calculate', 'required')">The minimum amount should
+                                            not be less than 40,000 SAR</mat-error>
+                                        <mat-error *ngIf="checkError('calculate', 'min')">The minimum amount
+                                            should
+                                            not be less than 40,000 SAR</mat-error>
+                                        <!-- <mat-error *ngIf="checkError('calculate', 'max')">The minimum amount
+                                            should
+                                            not be greater than 100,000,0 SAR</mat-error> -->
+                                    </mat-form-field>
+                                    <div class="btn">
+                                        <app-button [buttonType]="'submit'" buttonColor="#5B0E9F"
+                                            [btnDisable]="!eligible" (buttonClicked)="onCalculate()"
+                                            buttonTextColor="#fff" buttonWidth="101px"
+                                            buttonHeight="75%">Calculate</app-button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div *ngIf="eligible">
+                            <app-calculator></app-calculator>
+                        </div>
+                    </div>
+                </ng-template>
+
+                <div class="detailtext">
+                    <h2>Transparent and competitive interest rates</h2>
+                    <p>Get a financing solution that fits your needs and budget, without any hidden fees or charges.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="getapproved">
+            <div class="contetnt">
+                <div class="detailtext">
+                    <h2>Get approved for financing in minutes</h2>
+                    <p>A simple and quick application process that empowers start using your funds right away to
+                        purchase inventory, hire staff, or invest in marketing.
+                    </p>
+                </div>
+                <div class="subcontentright">
+                    <div class="steps">
+                        <div class="nums">
+                            <span class="CP">1</span>
+                            <mat-divider [vertical]="isSmallScreen" class="divider0"></mat-divider>
+                            <span class="SCon">2</span>
+                            <mat-divider [vertical]="isSmallScreen" class="divider1"></mat-divider>
+                            <span class="Nif">3</span>
+                            <mat-divider [vertical]="isSmallScreen" class="divider2"></mat-divider>
+                            <span class="SComm">4</span>
+                        </div>
+                    </div>
+                    <div *ngIf="!isSmallScreen;else small" class=" stepsdetails">
+                        <div class="commoditypurchase">
+                            <div class="CPDetail">
+                                <h2>Title 1</h2>
+                            </div>
+                        </div>
+                        <div class="signcontract">
+                            <div class="SConDetail">
+                                <h2>Title 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et. </p>
+                            </div>
+                        </div>
+                        <div class=" nifath">
+                            <div class="NifDetail">
+                                <h2>Title 3</h2>
+                            </div>
+                        </div>
+                        <div class="sellcommodity">
+                            <div class="SCommDetail">
+                                <h2>Title 4</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ng-template #small>
+                        <div class="smallScreentitle">
+                            <div class="detailtext">
+                                <h2 style="height: max-content; justify-content: center; align-items: center;">Title 2
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et.
+                                </p>
+                            </div>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+        <div class="mainwhy">
+            <div class="whyhalafin">
+                <div class="heads">
+                    <h2>Why Hala Financing?</h2>
+                    <p>Smartly. Conveniently. Efficiently</p>
+                </div>
+                <div class="reasonswhy">
+                    <div class="card1">
+                        <img src="../../../../../assets/images/why.svg" alt="">
+                        <div class="details">
+                            <h2>
+                                Customizable Financing Offers
+                            </h2>
+                            <p>
+                                Customize your final financing offer, adjust the amount and tenure till it meet your
+                                goal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <img src="../../../../../assets/images/why.svg" alt="">
+                        <div class="details">
+                            <h2>
+                                Flexible Repayment Plans
+                            </h2>
+                            <p>
+                                Select the length of the repayment term that work best for your budget. </p>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="../../../../../assets/images/why.svg" alt="">
+                        <div class="details">
+                            <h2>
+                                Instant Approval </h2>
+                            <p>
+                                Access your financing quickly, based on your credit history and other relevant factors.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faqs">
+            <h2>FAQ's</h2>
+            <div class="faqsdetails">
+                <div class="card1">
+                    <div class="details">
+                        <div class="question">
+                            <h3>
+                                What types of loans do you offer?
+                            </h3>
+                            <img src="../../../../../assets/images/expandbtn.svg" alt="">
+                        </div>
+                        <p>
+                            Currently, we offer POS lending program that empowers you to apply for and receive loans
+                            directly at the point-of-sale. So you will bee able to access financing quickly and easily,
+                            without the need for lengthy applications or credit checks.
+                        </p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="details">
+
+                        <div class="question">
+                            <h3>
+                                How do I apply for POS lending?
+                            </h3>
+                            <img src="../../../../../assets/images/collapsbtn.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="details">
+
+                        <div class="question">
+                            <h3>
+                                How long does the loan approval process take?
+                            </h3>
+                            <img src="../../../../../assets/images/collapsbtn.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card4">
+                    <div class="details">
+                        <div class="question">
+                            <h3>
+                                Can I pay off my loan early?
+                            </h3>
+                            <img src="../../../../../assets/images/collapsbtn.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-scorll></app-scorll>
+        <app-footer></app-footer>
+    </div>
+</div>

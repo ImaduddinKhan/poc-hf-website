@@ -1,0 +1,347 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.mainwhy {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 100%;
+    height: 694px;
+    left: 0px;
+    top: 622px;
+
+    background: #FFFFFF;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        height: 700px;
+        width: 100%;
+        top: 950px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: 700px;
+        width: 100%;
+
+        top: 422px;
+    }
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 100%;
+
+        top: 708px;
+    }
+
+    .heads {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+
+        width: 478px;
+        height: 88px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            flex-direction: column;
+            height: auto;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            flex-direction: column;
+            height: auto;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            height: auto;
+        }
+
+        h2 {
+            width: 458px;
+            height: 50px;
+
+            font-family: 'Arial-RoundedBold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 50px;
+            /* identical to box height */
+
+
+            color: #3B403F;
+
+            @media screen and (max-width: $breakpoint-md) {}
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 330px;
+                height: max-content;
+
+                font-family: 'Arial-RoundedBold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
+
+                color: #3B403F;
+
+            }
+        }
+
+        p {
+            width: 478px;
+            height: 22px;
+
+            font-family: 'Arial-Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: -0.32px;
+
+            color: #89908E;
+
+            @media screen and (max-width: $breakpoint-md) {
+                // width: 379px;
+                // height: 44px;
+                // font-size: 16px;
+                // line-height: 18px;
+                // text-align: center;
+                // letter-spacing: -0.32px;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 69%;
+                height: 54px;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: -0.32px;
+            }
+        }
+    }
+
+    .whyhalafin {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 80px;
+
+        width: 100%;
+        height: 481px;
+
+
+
+        .reasonswhy {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            gap: 51px;
+            width: 100%;
+            height: 482px;
+            top: 74px;
+            position: relative;
+
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                flex-direction: column;
+                align-items: center;
+
+                height: auto;
+            }
+
+            .firstreason {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 62px;
+                position: relative;
+                width: 346px;
+                height: 416px;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    height: 300px;
+                    width: 346px;
+                    align-items: flex-start;
+                    top: 354px;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    height: 300px;
+                    width: 346px;
+                    align-items: flex-start;
+                    top: 354px;
+                }
+
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    height: 300px;
+                    width: 346px;
+                    align-items: flex-start;
+                    top: 354px;
+                }
+            }
+
+            .secondreason {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 62px;
+
+                width: 346px;
+                height: 416px;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    height: 300px;
+                    width: 346px;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    position: relative;
+                    top: 450px;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    height: 300px;
+                    width: 346px;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    position: relative;
+                    top: 450px;
+                }
+
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    height: 300px;
+                    width: 346px;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    position: relative;
+                    top: 450px;
+                }
+            }
+
+            .image {
+                width: 239px;
+                height: 481px;
+                position: relative;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 346px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    top: 427px;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 346px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    top: 427px;
+                }
+
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 346px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 427px;
+                }
+            }
+
+
+
+            .card1,
+            .card2,
+            .card3 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+                gap: 16px;
+
+                width: 177px;
+                height: 329px;
+
+                border-radius: 12px;
+
+                img {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 6px;
+                    gap: 10px;
+
+                    width: 28px;
+                    height: 28px;
+
+                    background: #5B0E9F;
+                    border-radius: 100px;
+                }
+
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 8px;
+
+                    height: 58px;
+                    width: 271px;
+
+                    h2 {
+                        width: 230px;
+                        height: 18px;
+                        margin: 0;
+                        font-family: 'Arial-RoundedBold';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px;
+                        letter-spacing: -0.32px;
+
+                        color: #3B403F;
+                    }
+
+                    p {
+                        width: 271px;
+                        height: 32px;
+
+                        font-family: 'Arial-Rounded';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: -0.32px;
+
+                        color: #89908E;
+                    }
+                }
+            }
+        }
+    }
+}

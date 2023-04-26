@@ -1,0 +1,256 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    height: 1137px;
+    left: 0px;
+    // top: 1886px;
+    background: #FFFFFF;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        height: 700px;
+        width: 100%;
+        top: 2842px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: 700px;
+        width: 100%;
+        top: 2322px;
+    }
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 100%;
+        top: 716px;
+    }
+
+    .subcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 62px;
+
+        width: 1091px;
+        height: 766px;
+
+
+        .heads {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 12px;
+
+            width: 1068px;
+            height: 112px;
+
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+                height: auto;
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                flex-direction: column;
+                height: auto;
+            }
+
+            h2 {
+                width: max-content;
+                height: 42px;
+
+                font-family: 'Arial Rounded MT Bold';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 42px;
+                /* identical to box height */
+                letter-spacing: -0.32px;
+                color: #3B403F;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    height: max-content;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    // width: 379px;
+                    // height: max-content;
+                    // font-weight: 700;
+                    // font-size: 28px;
+                    // line-height: 32px;
+                    // text-align: center;
+
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 69%;
+                    height: max-content;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 32px;
+                    text-align: center;
+
+                }
+            }
+
+            p {
+                width: max-content;
+                height: 32px;
+
+                font-family: 'Arial Rounded MT Bold';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: -0.32px;
+
+                color: #9DA0A0;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    // width: 379px;
+                    // height: 44px;
+                    // font-size: 16px;
+                    // line-height: 18px;
+                    // text-align: center;
+                    // letter-spacing: -0.32px;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 35%;
+                    height: 54px;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: -0.32px;
+                }
+            }
+        }
+
+        .waystocontact {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;
+
+            width: 1091px;
+            height: 618px;
+
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+                align-items: center;
+
+                height: auto;
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                flex-direction: column;
+                align-items: center;
+
+                height: auto;
+            }
+
+
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                gap: 32px;
+
+                width: 529.5px;
+                height: 616px;
+
+                .card1,
+                .card2,
+                .card3 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    padding: 0px;
+
+                    width: 529.5px;
+                    height: 184px;
+
+                    background: #FAFBFC;
+                    border-radius: 4px;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 73%;
+                    }
+
+                    .cardcontents {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0 0px 24px 22px;
+                        gap: 16px;
+                        width: 320px;
+                        height: 136px;
+
+                        img {
+                            position: relative;
+                            width: 60px;
+                            height: 60px;
+                            left: 0px;
+                            top: 0px;
+                        }
+
+                        .details {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 0px;
+                            gap: 8px;
+
+                            height: 58px;
+                            width: 271px;
+
+                            h2 {
+                                width: max-content;
+                                height: 28px;
+
+                                font-family: 'Arial Rounded MT Bold';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 28px;
+                                /* identical to box height */
+                                text-align: center;
+                                letter-spacing: -0.32px;
+                                color: #000000;
+                                margin: 0px !important;
+                            }
+
+                            p {
+                                width: max-content;
+                                height: 28px;
+
+                                font-family: 'Arial Rounded MT';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 28px;
+                                letter-spacing: -0.32px;
+                                color: #9DA0A0;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

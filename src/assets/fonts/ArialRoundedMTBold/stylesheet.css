@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Arial-RoundedBold';
+    font-style: normal;
+    /* font-weight: 400; */
+    src: local('Arial-RoundedBold'), url(https://fonts.cdnfonts.com/s/13381/ARLRDBD_0.woff) format('woff')
+}
+
+@font-face {
+    font-family: "Arial-Rounded";
+    src: url("//db.onlinewebfonts.com/t/bada5831d93b6ae47871cdd365128de8.eot");
+    src: url("//db.onlinewebfonts.com/t/bada5831d93b6ae47871cdd365128de8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bada5831d93b6ae47871cdd365128de8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bada5831d93b6ae47871cdd365128de8.woff") format("woff"), url("//db.onlinewebfonts.com/t/bada5831d93b6ae47871cdd365128de8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bada5831d93b6ae47871cdd365128de8.svg#Arial") format("svg");
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DM Sans'), url('https://fonts.cdnfonts.com/s/29932/DMSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('DM Sans'), url('https://fonts.cdnfonts.com/s/29932/DMSans-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: arial rounded mt bold;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial Rounded MT Bold'), url(https://fonts.cdnfonts.com/s/13381/ARLRDBD_0.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('DM Sans'), url('https://fonts.cdnfonts.com/s/29932/DMSans-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: local('DM Sans'), url('https://fonts.cdnfonts.com/s/29932/DMSans-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DM Sans'), url('https://fonts.cdnfonts.com/s/29932/DMSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('DM Sans'), url('https://fonts.cdnfonts.com/s/29932/DMSans-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: italic;
+    font-weight: 100;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: italic;
+    font-weight: 200;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: italic;
+    font-weight: 300;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: italic;
+    font-weight: 600;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: italic;
+    font-weight: 800;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    font-style: italic;
+    font-weight: 900;
+    src: local('SF Pro Display'), url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff) format('woff')
+}
+
+@font-face {
+    font-family: almarai;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Almarai'), url(https://fonts.cdnfonts.com/s/29851/Almarai-Regular.woff) format('woff')
+}
+
+@font-face {
+    font-family: almarai;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Almarai'), url(https://fonts.cdnfonts.com/s/29851/Almarai-Light.woff) format('woff')
+}
+
+@font-face {
+    font-family: almarai;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Almarai'), url(https://fonts.cdnfonts.com/s/29851/Almarai-Bold.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Almarai'), url(https://fonts.cdnfonts.com/s/29851/Almarai-ExtraBold.woff) format('woff')
+}
+
+@font-face {
+    font-family: arial rounded mt bold;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial Rounded MT Bold'), url(https://fonts.cdnfonts.com/s/13381/ARLRDBD_0.woff) format('woff')
+}

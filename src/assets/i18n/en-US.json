@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "merchant": "For Merchants",
+    "investor": "For Investors"
+  },
+  "contents": {
+    "bannerHead": "Flexible financing solution for your business",
+    "bannerPara": "We make it easy for you to access the funds you need to grow your business and achieve your goals."
+  },
+
+  "for-investors": {
+    "bannerhead": "Looking for the next big investment opportunity?",
+    "bannerdetail": "We connects you with a diverse range of small businesses seeking funding to take their ideas to the next level."
+  },
+
+  "contactus": {
+    "contact": "Contact Us",
+    "bannerHead": "We are here to help you",
+    "haveaquestion": "Have a question, complaint, or a suggestion? We'll be happy to hear you!",
+    "callus": "Call Us",
+    "phoneno": "920000122",
+    "halaapp": "HALA application",
+    "viachat": "Via live chat in the application",
+    "fb": "Facebook",
+    "fbchat": "@Hala.Saudia",
+    "ccare": "Customer Care Email",
+    "email": "Support@hala.com",
+    "twitter": "Twitter",
+    "userid": "@halasaudiaml",
+    "insta": "Instagram",
+    "name": "@hala.saudia"
+  },
+
+  "relations": {
+    "head": "Financial Statements",
+    "BOD": "Board of Directors Report",
+    "audit": "AUDITED FINANCIALS for Q 1 2020",
+    "filesize": "file size: 48 MB",
+    "bodreports": "Board of Directors Report 2020"
+  }
+}

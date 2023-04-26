@@ -1,0 +1,275 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
+    gap: 40px;
+    position: absolute;
+    width: 100%;
+    height: 1005.08px;
+    left: 0px;
+    top: 1559px;
+    background: #FAFBFC;
+
+
+    @media screen and (max-width: $breakpoint-lg) {
+        height: 700px;
+        width: 100%;
+        top: 2812px;
+
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: 700px;
+        width: 100%;
+        top: 2266px;
+    }
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 100%;
+        height: 800px;
+        top: 2566px;
+    }
+
+    h2 {
+        width: 126px;
+        height: 50px;
+
+        font-family: 'Arial-RoundedBold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 50px;
+        /* identical to box height */
+
+
+        color: #3B403F;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            height: 700px;
+            width: 83%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            height: 700px;
+            width: 76%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 77%;
+            height: 1202px;
+            display: flex;
+            font-size: 28px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .faqsdetails {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+
+        width: 1091px;
+        height: 675.08px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            height: 700px;
+            width: 83%;
+            align-items: center;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            height: 700px;
+            width: 76%;
+            align-items: center;
+
+        }
+
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 77%;
+            height: 800px;
+            align-items: center;
+        }
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 36px 39px;
+            gap: 10px;
+
+            width: 1091px;
+            height: 219.08px;
+
+            /* Neutral/100 */
+
+            background: #FFFFFF;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
+            border-radius: 14px;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                height: 700px;
+                width: 100%;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 700px;
+                width: 100%;
+
+            }
+
+
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 365px;
+                width: 100%;
+
+            }
+
+            .details {
+                width: 1013px;
+                height: 147.08px;
+
+                .question {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 187px;
+
+                    position: absolute;
+                    width: 1077px;
+                    height: 42px;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 84%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 80%;
+                        gap: 0;
+                    }
+
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 80%;
+                    }
+
+                    h3 {
+                        width: 451px;
+                        height: 28px;
+
+                        /* Headings/Typography Size 4 */
+
+                        font-family: 'DM Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 28px;
+                        /* identical to box height, or 127% */
+
+
+                        color: #3B403F;
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    width: 886.18px;
+                    height: 90px;
+                    top: 437px;
+
+                    /* Paragraph/Default */
+
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    /* or 167% */
+
+
+                    color: #939393;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 80%;
+                        top: 281px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 80%;
+                        top: 281px;
+                    }
+
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        position: absolute;
+                        width: 301.07px;
+                        height: 270px;
+                        left: 39px;
+                        top: 288px;
+                    }
+                }
+            }
+        }
+
+        .card2,
+        .card3,
+        .card4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+            gap: 10px;
+
+            width: 1091px;
+            height: 36px;
+
+            /* Neutral/100 */
+
+            background: #FFFFFF;
+            /* Cards/Short Default */
+
+            box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+            border-radius: 18px;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                width: 100%;
+
+            }
+
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 100%;
+            }
+        }
+    }
+}

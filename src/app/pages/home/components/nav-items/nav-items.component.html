@@ -1,0 +1,15 @@
+<div class="header">
+    <nav>
+        <img src="../../../../../assets/images/Hala financing 1.svg" alt="">
+        <div class="links">
+            <a [style.background]="backgroundColor" [style.border-bottom]="borderBottom"
+                [style.border-radius]="borderRad" [style.width]="navWidth" id="merchants" routerLink="../merchant"
+                routerLinkActive="active">{{ 'nav.merchant' | translate
+                }}</a>
+            <p>|</p>
+            <a id="investors" routerLink="../investors" routerLinkActive="active">{{ 'nav.investor' | translate
+                }}</a>
+        </div>
+        <app-translate></app-translate>
+    </nav>
+</div>

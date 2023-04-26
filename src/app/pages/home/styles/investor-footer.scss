@@ -1,0 +1,189 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px 10px 60px 10px;
+    gap: 20px;
+    position: absolute;
+    width: 1278px;
+    height: 219px;
+    left: 333px;
+    top: 2981px;
+
+    /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05); */
+    @media screen and (max-width: $breakpoint-lg) {
+        height: 700px;
+        width: 64%;
+        top: 3938px;
+        left: 88px;
+        justify-content: flex-start;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: 700px;
+        width: 64%;
+        top: 3351px;
+        left: 88px;
+        justify-content: flex-start;
+    }
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 700px;
+        width: 64%;
+        top: 3651px;
+        left: 88px;
+        justify-content: flex-start;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 150px;
+
+        width: 1125px;
+        height: 83px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            flex-direction: column;
+            width: 83%;
+            gap: 95px;
+            align-items: flex-start;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            flex-direction: column;
+            gap: 95px;
+            width: 76%;
+            align-items: flex-start;
+
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            gap: 95px;
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        .one,
+        .two,
+        .three,
+        .followus {
+            width: 267px;
+            height: 76px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: 'SF Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #737373;
+
+
+            p {
+                width: 267px;
+                height: 51px;
+
+                font-family: 'SF Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #737373;
+            }
+
+            h2 {
+                width: max-content;
+                height: 17px;
+
+                font-family: 'SF Pro';
+                font-style: normal;
+                font-weight: 590;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+                color: #000000;
+            }
+
+            a {
+                display: flex;
+                width: max-content;
+                height: 17px;
+                font-family: 'SF Pro';
+                font-style: normal;
+                font-weight: 590;
+                font-size: 14px;
+                line-height: 17px;
+                text-decoration-line: none;
+                /* identical to box height */
+                color: #737373;
+            }
+
+            .sociallogos {
+                width: 121px;
+                height: 47px;
+
+                background: url(../../../../assets/images/image.png);
+            }
+
+        }
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0px;
+        // gap: 589px;
+        width: 1306px;
+        height: 17px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            flex-direction: column;
+            height: auto;
+            position: absolute;
+            top: 621px;
+            align-items: flex-start;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            flex-direction: column;
+
+            align-items: flex-start;
+
+        }
+
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+
+            align-items: flex-start;
+        }
+
+        h3 {
+            width: 269px;
+            height: 17px;
+
+            font-family: 'SF Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}

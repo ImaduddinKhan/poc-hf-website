@@ -1,0 +1,208 @@
+@import '../../styles/contactus-header.scss';
+@import '../../styles/consumer-prot-footer.scss';
+@import '../../styles/details.scss';
+@import '../../styles/merchant-banner.scss';
+@import '../../styles/merchant-faqs.scss';
+@import '../../styles/why-hala-fin-merchant.scss';
+@import '../../styles/merchant-get-approved.scss';
+@import '../../styles/calc.scss';
+
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $breakpoint-md) {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 102%;
+        margin-left: -8px;
+    }
+
+    .content {
+        flex-shrink: 1;
+        flex-grow: 1;
+        padding: 3px 5px;
+        position: relative;
+        // overflow-y: auto;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        //==================================================//
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 161px;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 680px;
+            left: 0px;
+            top: 0px;
+
+            background: #FAFBFC;
+
+
+            .principles {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                gap: 62px;
+                justify-content: center;
+                width: 100%;
+                height: 677px;
+                // @media screen and (max-width: $breakpoint-lg) {
+                //     top: 67px;
+                //     position: relative;
+                // }
+
+                // @media screen and (max-width: $breakpoint-md) {
+                //     width: 564px;
+                //     height: 315px;
+                //     align-items: center;
+                //     position: relative;
+                //     top: 67px;
+                // }
+
+                @media screen and (max-width: $breakpoint-sm) {}
+
+                h2 {
+                    width: 547px;
+                    height: 42px;
+
+                    font-family: 'Arial Rounded MT Bold';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 36px;
+                    line-height: 42px;
+                    /* identical to box height */
+
+                    letter-spacing: -0.32px;
+
+                    color: #3B403F;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 478px;
+                        height: auto;
+                        // font-weight: 700;
+                        // font-size: 44px;
+                        // line-height: 43px;
+
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 330px;
+                        // height: 96px;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 32px;
+                        text-align: center;
+                    }
+                }
+
+                .file {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    padding: 24px;
+                    gap: 16px;
+
+                    width: 1091px;
+                    height: 169px;
+
+                    background: #FFFFFF;
+                    border-radius: 4px;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 691px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 342px;
+                        height: 169px;
+                    }
+
+                    .file-detail {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0px;
+                        gap: 16px;
+
+                        width: 362px;
+                        height: 161px;
+
+                        h3 {
+                            width: 362px;
+                            height: 28px;
+
+                            font-family: 'Arial Rounded MT Bold';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 28px;
+                            /* identical to box height */
+
+                            text-align: center;
+                            letter-spacing: -0.32px;
+
+                            color: #000000;
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                width: 355px;
+                                font-size: 22px;
+                                text-align: start;
+                            }
+                        }
+
+                        p {
+                            width: max-content;
+                            height: 23px;
+
+                            font-family: 'Arial Rounded MT';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 23px;
+                            letter-spacing: -0.32px;
+
+                            color: #9DA0A0;
+                        }
+                    }
+
+                    span {
+                        @media screen and (max-width: $breakpoint-sm) {
+                            right: 31px;
+                            position: absolute;
+                            top: 464px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

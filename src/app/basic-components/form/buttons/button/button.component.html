@@ -1,0 +1,10 @@
+<ng-template #buttonTemplate>
+  <ng-content></ng-content>
+</ng-template>
+<div class="button">
+  <button mat-raised-button [disabled]="btnDisable" [class.next]="btnDisableColor" [title]="title" [type]="buttonType"
+    [style.background]="buttonColor" [style.height]="buttonHeight" [style.color]="buttonTextColor"
+    [style.width]="buttonWidth" [style.max-width]="buttonWidthSM" (click)="buttonClicked()">
+    <ng-template [ngTemplateOutlet]="buttonTemplate"></ng-template>
+  </button>
+</div>

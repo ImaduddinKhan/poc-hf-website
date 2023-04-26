@@ -1,0 +1,273 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.subcontentleft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 36px;
+    gap: 40px;
+
+    width: 530px;
+    height: 208px;
+
+    background: #FAFBFC;
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 4px 20px #EFF0F0;
+    border-radius: 16px;
+
+    @media screen and (max-width: $breakpoint-md) {
+        width: 76%;
+        height: 172px;
+        margin-right: 11px;
+    }
+
+    .finhead {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+
+        width: 255px;
+        height: 61px;
+
+        h3 {
+            font-family: 'Arial-RoundedBold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 27px;
+            letter-spacing: -0.32px;
+            color: #3B403F;
+        }
+    }
+
+    .calc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 458px;
+        height: 59px;
+
+        @media screen and (max-width: $breakpoint-md) {}
+
+        @media screen and (max-width: $breakpoint-sm) {}
+
+        h3 {
+            width: 211px;
+            height: 13px;
+
+            font-family: 'Arial-Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+            letter-spacing: -0.32px;
+
+            color: #3B403F;
+
+        }
+
+        .calcavgpossale {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 8px;
+
+            width: 458px;
+            height: 59px;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 512px;
+            }
+
+            .inputandbtn {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 8px;
+
+                width: 458px;
+                height: 38px;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    gap: 20px;
+                    width: 500px;
+                }
+
+                .btn {
+                    height: 52px;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        height: 41px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        height: 52px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        // height: 52px;
+                    }
+                }
+
+                input {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 10px 12px;
+                    gap: 10px;
+                    width: 349px;
+                    height: 16px;
+                    background: #FFFFFF;
+                    border: 1px solid transparent;
+                    border-radius: 8px;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 70%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 36%;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 27px;
+    width: 475px;
+    position: absolute;
+    top: 315px;
+    height: 176px;
+    background: #FFFFFF;
+    border-radius: 12px;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        top: 533px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        top: 695px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        top: 636px;
+        left: 34px;
+        width: 315px;
+    }
+
+    h3 {
+        width: 143px;
+        height: 18px;
+        margin: 0;
+        font-family: 'Arial-RoundedBold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.32px;
+
+        color: #3B403F;
+    }
+
+    .monthsdata {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+        width: 418px;
+        height: 72px;
+
+
+
+        .eachmonth {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 12px;
+            gap: 28px;
+            width: 131.33px;
+            height: 72px;
+            background: #F8F8F8;
+            border-radius: 8px;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 72.33px;
+                gap: 15px;
+            }
+
+            h2 {
+                width: 63px;
+                height: 18px;
+                font-family: "Arial-RoundedBold";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                margin: 0;
+                line-height: 18px;
+                letter-spacing: -0.32px;
+                color: #3B403F;
+
+                span {
+                    font-size: 11px;
+                    margin-left: 5px;
+                }
+            }
+
+            h3 {
+                width: 122px;
+                height: 18px;
+                font-family: "Arial-RoundedBold";
+                font-style: normal;
+                font-weight: 700;
+                margin: 0;
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: -0.32px;
+                color: #009877;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 78px;
+                }
+
+                span {
+                    font-size: 11px;
+                    margin-left: 3px;
+                }
+            }
+        }
+
+        p {
+            width: 418px;
+            height: 22px;
+
+            font-family: 'Arial-Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 11px;
+            letter-spacing: -0.32px;
+
+            color: #AEAEAE;
+        }
+    }
+}

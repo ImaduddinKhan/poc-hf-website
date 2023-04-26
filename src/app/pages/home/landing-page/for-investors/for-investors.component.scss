@@ -1,0 +1,48 @@
+@import '../../styles/details.scss';
+@import '../../styles/investor-footer.scss';
+@import '../../styles/investor-header.scss';
+@import '../../styles/investor-banner.scss';
+@import '../../styles/investor-faqs.scss';
+@import '../../styles/why-hala-fin-investor.scss';
+
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $breakpoint-md) {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 102%;
+        margin-left: -8px;
+    }
+
+    .content {
+        flex-shrink: 1;
+        flex-grow: 1;
+        padding: 3px 5px;
+        position: relative;
+        // overflow-y: auto;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            overflow-x: hidden;
+            width: 100%;
+        }
+    }
+}

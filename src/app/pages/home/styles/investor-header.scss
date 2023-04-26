@@ -1,0 +1,171 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: #eee;
+    padding: 1px 72px;
+    height: 88px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+
+    @media screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+        gap: 0;
+        top: -8px;
+        position: relative;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 6px 0px;
+        gap: 10px;
+        width: 100%;
+        height: 88px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    nav {
+        display: flex;
+        height: 40px;
+        position: relative;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            gap: 248px;
+            justify-content: space-evenly;
+            left: 4px;
+        }
+
+        .links {
+            width: 306px;
+            height: 42px;
+            font-family: "Arial Rounded MT";
+            font-style: normal;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            line-height: 19px;
+            color: #8A908E;
+            flex-direction: row;
+            gap: 18px;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                flex-direction: column;
+                gap: 0;
+                top: -8px;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                width: 122px;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                top: -8px;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                width: 122px;
+            }
+
+            a {
+                padding: 5px 2px;
+                text-decoration: none;
+                margin-top: 10px;
+                display: flex;
+                background-color: #eee;
+                border-radius: 4px;
+                font-family: 'Almarai';
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    margin-top: 0;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    margin-top: 0;
+                }
+            }
+
+            p {
+                position: relative;
+                top: 14px;
+                color: #8A908E;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    display: none;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    display: none;
+                }
+            }
+        }
+
+        #merchants {
+            background-color: transparent;
+        }
+
+        #investors {
+            background-color: transparent;
+            border-bottom: 4px solid #5B0E9F;
+            border-radius: 3px;
+            width: auto;
+        }
+
+        a:visited,
+        a:link {
+            color: #5B0E9F;
+        }
+
+        a:hover {
+            color: #FFD100;
+            background-color: #CFD8DC;
+        }
+
+        a.active {
+            color: #000;
+        }
+
+        .localization {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
+
+            width: 85px;
+            height: 22px;
+
+            h3 {
+                width: 85px;
+                height: 22px;
+                margin: 0;
+                font-family: 'Almarai';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 22px;
+
+                color: #000000;
+            }
+        }
+    }
+}

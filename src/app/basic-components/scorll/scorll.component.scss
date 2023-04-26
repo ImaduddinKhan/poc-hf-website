@@ -1,0 +1,37 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.scroll {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    /* top: 948px; */
+    left: 43px;
+    padding-bottom: 100px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+
+    button {
+        width: 52px;
+        height: 52px;
+        border: 1px solid transparent;
+        background-color: #FFD100;
+        color: #5B0E9F;
+        border-radius: 40px;
+        font-size: 26px;
+        font-family: "Arial-RoundedBold";
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {}
+
+    @media screen and (max-width: $breakpoint-md) {}
+
+
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
+}

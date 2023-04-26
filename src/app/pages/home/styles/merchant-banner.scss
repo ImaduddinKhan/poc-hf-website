@@ -1,0 +1,198 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 120px;
+    gap: 33px;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background: #FAFBFC;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+        height: auto;
+        padding: 0px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        flex-direction: column;
+        height: auto;
+        padding: 0px;
+        gap: 140px;
+        width: 100%;
+        height: 698px;
+    }
+
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+        width: 564px;
+        height: 156px;
+
+        @media screen and (max-width: $breakpoint-xl) {
+            width: 336px;
+        }
+
+        @media screen and (max-width: $breakpoint-lg) {
+            width: 100%;
+            align-items: center;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            width: 564px;
+            height: 315px;
+            align-items: center;
+            position: relative;
+            top: 67px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 12px;
+            top: 67px;
+            width: 330px;
+            height: 162px;
+        }
+
+        h2 {
+            width: 569px;
+            height: 220px;
+
+            font-family: 'Arial-RoundedBold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 50px;
+
+            color: #3B403F;
+
+            @media screen and (max-width: $breakpoint-xl) {
+
+                width: 437px;
+                font-size: 41px;
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 479px;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                width: 478px;
+                height: auto;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 330px;
+                height: 96px;
+
+                font-family: 'Arial-RoundedBold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
+
+                color: #3B403F;
+            }
+        }
+
+        p {
+            width: 479px;
+            height: 44px;
+
+            font-family: 'Arial-Rounded';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: -0.32px;
+
+            color: #89908E;
+
+            @media screen and (max-width: $breakpoint-xl) {
+                width: 374px;
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 479px;
+
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                // width: 379px;
+                // height: 44px;
+                // font-weight: 400;
+                // font-size: 16px;
+                // line-height: 21px;
+
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 330px;
+                height: 54px;
+
+                font-family: 'Arial-Rounded';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: -0.32px;
+
+                color: #89908E;
+
+            }
+        }
+    }
+
+    .image {
+        display: flex;
+        position: relative;
+        width: 514.84px;
+        height: 679.08px;
+        top: 189.37px;
+
+        @media screen and (max-width: $breakpoint-md) {
+            img {
+                width: 518.77px;
+                height: 720.46px;
+            }
+
+            // display: none;
+            justify-content: center;
+            top: 95px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            img {
+                width: 318.77px;
+                height: 420.46px;
+            }
+
+            // display: none;
+            justify-content: center;
+            top: 95px;
+        }
+
+    }
+}

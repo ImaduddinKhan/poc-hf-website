@@ -1,0 +1,407 @@
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.getapproved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0px;
+
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    left: 0px;
+    top: 1360px;
+
+    background: #FAFBFC;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        height: 676px;
+        top: 1822px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: auto;
+        top: 2022px;
+        padding: 80px 0px 120px;
+        gap: 80px;
+
+        width: 100%;
+        height: 798px;
+
+    }
+
+    // @media screen and (max-width: $breakpoint-sm) {
+    //     width: 100%;
+    //     top: 216px;
+    // }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        top: 1815px;
+        padding: 80px 0px 120px;
+        gap: 80px;
+
+        width: 100%;
+        height: 698px;
+    }
+
+    .contetnt {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 60px;
+
+        width: 1091px;
+        height: 748px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            flex-direction: column;
+            height: auto;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            width: 100%;
+            height: 748px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            width: 100%;
+            gap: 150px;
+            position: relative;
+            top: 51px;
+            height: 448px;
+        }
+
+
+        .subcontentright {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // align-items: flex-start;
+            padding: 0px;
+            gap: 16px;
+            justify-content: center;
+
+            width: 100%;
+            height: 360px;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: max-content;
+                height: 282px;
+
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                align-items: center;
+                padding: 0px;
+                gap: 12px;
+                width: 100%;
+                height: 282px;
+
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                gap: 12px;
+
+                width: 100%;
+                height: 282px;
+
+            }
+
+            .steps {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 16px 0px;
+
+                width: 32px;
+                height: 360px;
+
+                // @media screen and (max-width: $breakpoint-md) {
+                //     flex-direction: row;
+                //     padding: 16px 0px;
+
+                //     width: max-content;
+                //     height: 64px;
+
+                // }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 16px 0px;
+
+                    width: max-content;
+                    height: 64px;
+
+                }
+
+
+                .nums {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 16px 0px;
+
+                    width: 32px;
+                    height: 360px;
+
+                    // @media screen and (max-width: $breakpoint-md) {
+                    //     flex-direction: row;
+                    //     padding: 16px 0px;
+
+                    //     width: max-content;
+                    //     height: 64px;
+
+                    // }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 16px 0px;
+
+                        width: max-content;
+                        height: 64px;
+
+                    }
+
+                    // mat-divider {
+                    //     width: 0px;
+                    //     height: 54px;
+                    //     background-color: #129c7b;
+
+                    //     @media screen and (max-width: $breakpoint-md) {
+                    //         // width: 17px;
+                    //         // gap: 10px;
+                    //         height: 80px;
+                    //     }
+                    // }
+
+                    .divider0,
+                    .divider1,
+                    .divider2 {
+                        height: 54px;
+                        width: 1px;
+
+                        // @media screen and (max-width: $breakpoint-md) {
+                        //     flex-direction: row;
+                        //     padding: 16px 0px;
+
+                        //     width: max-content;
+                        //     height: 64px;
+
+                        // }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            width: 42px;
+                            height: 1px;
+
+                        }
+                    }
+
+                    .divider0 {
+                        background: linear-gradient(91deg, #ffffff 20.59%, #5B0E9F 79.35%);
+
+
+                    }
+
+                    .divider1 {
+                        background: #ECECEC;
+                        background: linear-gradient(91deg, #5B0E9F 20.59%, #ffffff 79.35%);
+
+
+                    }
+
+                    .divider2 {
+                        background: #ECECEC;
+                        // background: linear-gradient(91deg, #129C7B 30.59%, #ECECEC 79.35%);
+
+
+                    }
+
+                    .CP,
+                    .SCon,
+                    .Nif,
+                    .SComm {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px;
+                        gap: 10px;
+
+                        width: 32px;
+                        height: 32px;
+
+                        background: #EDEDED;
+                        border-radius: 100px;
+
+
+                        color: #B0B0B0;
+                    }
+
+                    .SCon {
+                        color: #FFFFFF;
+                        background: #5B0E9F;
+                    }
+                }
+            }
+
+            .stepsdetails {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 24px;
+
+                width: 505px;
+                height: 360px;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    // display: none;
+
+                    width: 505px;
+                    height: 360px;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    display: none;
+
+
+                }
+
+                .commoditypurchase,
+                .signcontract,
+                .nifath,
+                .sellcommodity {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 16px;
+                    gap: 16px;
+
+                    width: 505px;
+                    height: 59px;
+
+
+
+
+
+                    .CPDetail,
+
+                    .NifDetail,
+                    .SCommDetail {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0px;
+                        gap: 3px;
+
+                        width: 145px;
+                        height: 49px;
+
+                        h2 {
+                            width: 90px;
+                            height: 27px;
+
+                            font-family: 'Arial-RoundedBold';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 27px;
+
+                            color: #3B403F;
+
+
+                        }
+                    }
+                }
+
+                .signcontract {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 16px;
+                    gap: 16px;
+                    width: 505px;
+                    height: 111px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+                    border-radius: 16px;
+
+                    .SConDetail {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0px;
+                        gap: 3px;
+                        width: 145px;
+                        height: 49px;
+
+                        h2 {
+                            width: 90px;
+                            height: 27px;
+                            font-family: "Arial-RoundedBold";
+                            font-style: normal;
+                            font-weight: 700;
+                            margin: 0;
+                            font-size: 24px;
+                            line-height: 0px;
+                            color: #3B403F;
+
+
+                        }
+
+                        p {
+                            width: 473px;
+                            height: 33px;
+                            font-family: "Arial-Rounded";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            margin: 0;
+                            /* line-height: 19px; */
+                            overflow: auto;
+                            letter-spacing: -0.32px;
+                            color: #89908E;
+                        }
+                    }
+                }
+
+            }
+
+            .smallScreentitle {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding: 16px 24px;
+                gap: 16px;
+
+                width: 365px;
+                height: 206px;
+
+                background: #FFFFFF;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+                border-radius: 16px;
+
+            }
+
+        }
+    }
+}
